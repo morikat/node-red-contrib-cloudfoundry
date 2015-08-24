@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-cloudfoundry",
+  "version": "0.0.1",
+  "description": "Cloud Foundry Node-RED",
+  "author": {
+    "name": "morikat",
+    "email": "morika-t@outlook.com"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/morikat/node-red-contrib-cloudfoundry.git"
+  },
+  "dependencies": {
+    "cf-nodejs-client": "0.0.6"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "cloudfoundry": "cloudfoundry.js"
+    }
+  },
+  "license": "MIT"
+}

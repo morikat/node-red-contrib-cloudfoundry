@@ -1,0 +1,34 @@
+<script type="text/javascript">
+    RED.nodes.registerType('cloudfoundry-apps',{
+        category: 'PaaS',
+        color: '#B7E4F6',
+        defaults: {
+            api: {value: ""},
+            username: {value:""},
+            password: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "white-globe.png",
+        label: "cf apps"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="cloudfoundry-apps">
+    <div class="form-row">
+        <label for="node-input-api"><i class="icon-tag"></i>api</label>
+        <input type="text" id="node-input-api" placeholder="api">
+    </div>
+    <div class="form-row">
+        <label for="node-input-username"><i class="icon-tag"></i>username</label>
+        <input type="text" id="node-input-username" placeholder="username">
+    </div>
+    <div class="form-row">
+        <label for="node-input-password"><i class="icon-tag"></i>password</label>
+        <input type="password" id="node-input-password" placeholder="password">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="cloudfoundry-apps">
+    <p>Cloud Foundry Apps node</p>
+</script>
